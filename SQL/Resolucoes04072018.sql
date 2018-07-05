@@ -56,7 +56,7 @@ where vendas.vendedor = vendedor.id_vendedor and
       vendas.data <= "2013-06-30"
 order by vendas.data DESC      
       
--- 11
+
 
 
 
