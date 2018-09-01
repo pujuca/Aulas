@@ -44,7 +44,20 @@ foreign key(cod_status) references
 	status(cod_status)
 );
 
-
+create table tracking(
+cod_tracking int not null,
+cod_pedido int not null,
+cod_status int not null,
+descricao varchar(50),
+data_status timestamp,
+geo_lat varchar(14),
+geo_long varchar(14),
+primary key(cod_tracking),
+foreign key(cod_pedido) references
+	pedido(cod_pedido),
+foreign key(cod_status) references
+	status(cod_status)
+);
 
 
 
