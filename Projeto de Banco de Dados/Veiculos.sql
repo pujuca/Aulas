@@ -57,8 +57,30 @@ create table ano_modelo(
   num_ano_mod int,
   primary key(id_ano_mod));
 
-
-
+ 
+create table veiculo(
+  id_vei bigint not null,
+  km_vei varchar(45),
+  pre_vei int,
+  val_vei int,
+  pla_vei varchar(14),
+  id_mar int not null,
+  id_tip_vei int not null,
+  id_ano_mod int not null,
+  id_ano_fab int not null,
+  id_cor int not null,
+  id_alb int not null,
+  primary key(id_vei),
+  foreign key(id_alb) references
+          Album(id_alb),
+  foreign key(id_cor) references
+          Cor(id_cor),
+  foreign key(id_ano_fab) references
+          Ano_fabricacao(id_ano_fab),
+  foreign key(id_ano_mod) references
+          Ano_modelo(id_ano_mod),
+  foreign key(id_mar, id_tip_vei) references
+          tipo_veiculo_marca(id_mar, id_tip_vei));
 
 
 
