@@ -83,5 +83,19 @@ add estado varchar(2);
 alter table postagem
 add foreign key(estado) references estado(uf);
 
+-- 13
+insert into postagem values(1,1,4,"Vendo casa Velha","PI");
+insert into postagem values(2,3,1,"Emprego de programador","estado");
+insert into postagem values(3,2,3,"Vendo fusca 70","PI");
+
+
+
+
+
+
+
+
+
+
 
 
