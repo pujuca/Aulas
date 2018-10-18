@@ -79,7 +79,7 @@ from itens_venda
 where num_venda = 3
 
 update vendas
-	set total = 4 
+	set total = 4
 where num_venda = 3
 -- 19
 select * 
