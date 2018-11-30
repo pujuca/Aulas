@@ -1,6 +1,5 @@
 Exercícios
 
-
 Pai (Id_pai, pai, salario)
 Filho (Id_filho, filho, id_pai, idade)
 
