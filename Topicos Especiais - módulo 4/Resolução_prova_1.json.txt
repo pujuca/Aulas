@@ -1,0 +1,136 @@
+//1
+{
+ "nome":"Jr",
+ "sexo":"M",
+ "apelido":"Juninho",
+ "endereco": {
+               "logradouro":"Rua Bolivia, 20",
+               "cidade":"Parnaiba",
+               "estado":"PI",
+               "cep":"64212-215"  
+             }
+ "telefone":[ {"celular":"999999999}, 
+              {"casa": "33236000} 
+            ]
+}
+
+//2
+[
+  {
+    "nome":"Antonio",
+    "idade":35,
+    "sexo":"M",
+    "parentesco":"amigo"
+  },
+  {
+    "nome":"Davi",
+    "idade":23,
+    "sexo":"M",
+    "parentesco":"aluno"
+  },
+  {
+    "nome":"Marilia",
+    "idade":32,
+    "sexo":"F",
+    "parentesco":"esposa",
+    "casada":true
+  }
+]
+
+//3
+use concessionaria,
+db.carros.insertMany([
+{placa:"xxx1223", modelo:"fusca", marca:"vw", ano_fabricacao:1960, cor:"branca", valor:1},
+{placa:"yyy1223", modelo:"uno", marca:"fiat", ano_fabricacao:1999, cor:"cinza", valor:2},
+{placa:"aaa1223", modelo:"hb20", marca:"hyundai",ano_fabricacao:2019, cor:"preto",valor:3},
+{placa:"bbb1223", modelo:"fiesta", marca:"ford", ano_fabricacao:2002, cor:"vermelho", valor:1.5},
+{placa:"ccc1223", modelo:"up", marca:"vw", ano_fabricacao:2018, cor:"branca", valor:3}
+])
+
+//4
+db.carros.find(
+   {marca:"fiat"}
+)
+
+// 5
+db.carros.updateOne(
+   {modelo:"hb20"},
+   {$set :{cor:"branca"}}
+)
+
+//6
+db.carros.deleteOne(
+    {marca:"vw"}
+)
+
+//7
+db.carros.insertOne(
+{
+     placa:"xxx9999", modelo:"kombi", marca:"vw", 
+     ano_fabricacao:1950, cor:"branca", valor:0.05,
+     baixo: false
+}
+)
+
+//8
+db.carros.updateOne(
+   {modelo:"kombi"},
+   {$set :{baixo:true}}
+)
+
+//9
+db.carros.updateOne(
+   {modelo:"kombi"},
+   {$unset :{baixo:1}}
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

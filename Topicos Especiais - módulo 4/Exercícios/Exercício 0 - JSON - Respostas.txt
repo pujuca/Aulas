@@ -1,0 +1,141 @@
+
+Exercício JSON
+1.
+a)
+  {
+    "nome":"Denival",
+    "Sobrenome":"Santos"
+  }
+
+b)
+  {
+    "id":1,
+    "Descricao":"Farinha de pumba",
+    "valor":5.00
+  }
+  
+c)
+  {
+    "Semana":[
+      {"dia":"Segunda-Feira"},
+      {"dia":"Terça-Feira"},
+      {"dia":"Quarta-Feira"},
+      {"dia":"Quinta-Feira"},
+      {"dia":"Sexta-Feira"},
+      {"dia":"Sabado"},
+      {"dia":"Domingo"}
+      ]
+  }
+
+d)
+ {
+    "Paleta":[
+      {"cor":"Branca"},
+      {"cor":"Vermelha"},
+      {"cor":"Azul"},
+      {"cor":"Rosa"}
+      ]
+  }
+  
+e)
+
+  {
+    "Carros":[
+      {"placa":"xxx1234","modelo":"Uno"},
+      {"placa":"xyz1234","modelo":"Palio"},
+      {"placa":"ttt1234","modelo":"hb20"}
+      ]
+  }
+
+f)
+  {
+    "Alunos":[
+      {"nome":"João","sexo":"M", "serie":"3º"},
+      {"nome":"Maria","sexo":"F", "serie":"2º"}
+      ]
+  }
+  
+g)
+  {
+    "Caramuru":[
+    {
+        "cep": "64215-415",
+        "logradouro": "Rua Caramuru",
+        "complemento": "de 567/568 ao fim",
+        "bairro": "Boa Esperança",
+        "localidade": "Parnaíba",
+        "uf": "PI",
+        "unidade": "",
+        "ibge": "2207702",
+        "gia": ""
+    },
+    {
+        "cep": "64215-336",
+        "logradouro": "Rua Caramuru",
+        "complemento": "",
+        "bairro": "Pindorama",
+        "localidade": "Parnaíba",
+        "uf": "PI",
+        "unidade": "",
+        "ibge": "2207702",
+        "gia": ""
+    },
+    {
+        "cep": "64215-825",
+        "logradouro": "Rua Caramuru",
+        "complemento": "",
+        "bairro": "Ceará",
+        "localidade": "Parnaíba",
+        "uf": "PI",
+        "unidade": "",
+        "ibge": "2207702",
+        "gia": ""
+    },
+    {
+        "cep": "64215-087",
+        "logradouro": "Rua Caramuru",
+        "complemento": "até 565/566",
+        "bairro": "São Francisco da Guarita",
+        "localidade": "Parnaíba",
+        "uf": "PI",
+        "unidade": "",
+        "ibge": "2207702",
+        "gia": ""
+    }     ]
+  }
+  
+  
+  h)
+  {
+  "nome":"Denival",
+  "sobrenome":"Santos",
+  "idade":41,
+  "endereco":{
+    "logradouro":"rua das flores, 1212",
+    "cidade":"Parnaiba",
+    "uf":"PI",
+    "cep":"64215838"
+  },
+  "telefone":[
+    {"tipo":"residencial","numero":"33336003"},
+    {"tipo":"celular","numero":"999999999"}
+  ]
+}
+
+j)
+{
+  "forma":"A vista",
+  "instituicao":"visa",
+  "parcelas":1,
+  "cartao":{
+    "numero":"123456",
+    "expiracao":"05/2020",
+    "codigo":"123"
+    },
+  "portador":{
+    "nome":"Taynar",
+    "dataNascimento":"01/01/1996",
+    "telefone":"99999999",
+    "cpf":"12345678901"
+  }  
+}
