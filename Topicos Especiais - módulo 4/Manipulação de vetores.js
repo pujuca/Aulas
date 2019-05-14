@@ -17,7 +17,6 @@ db.pessoa.find({
     gosto:{$all:["series","gibi"]}
 })
 
-
 // Inseri novo gosto
 db.pessoa.update(
  {nome:"Antonio"},
