@@ -8,6 +8,15 @@ db.pessoa.insertMany([
 
 // Busca
 db.pessoa.find({})
+// Busca que goste de musica ou de gibi
+db.pessoa.find({
+    gosto:{$in:["musica","gibi"]}
+})
+// Busca que goste de series e de gibi
+db.pessoa.find({
+    gosto:{$all:["series","gibi"]}
+})
+
 
 // Inseri novo gosto
 db.pessoa.update(

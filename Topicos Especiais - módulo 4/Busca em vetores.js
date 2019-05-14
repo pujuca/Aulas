@@ -9,5 +9,6 @@ db.pessoa2.insertMany([
 
 // Busca
 db.pessoa2.find({"contato.celular":"998277464"})
+
   
 
