@@ -14,6 +14,7 @@ var jsonParser = bodyParser.json({ type: 'application/*+json' } );
 // Rota get
 router.get('/amigos', (req, res) => {
     console.log('Rota GET executando');
+    // pesquisa todos os amigos
     amigo.find((err, amigos) => {
         // Em caso de erros, envia o erro na resposta
         if (err)
@@ -22,17 +23,16 @@ router.get('/amigos', (req, res) => {
         res.json(amigos); 
     });
 });
-
 // Rota salvar amigo
 router.post('/amigos', jsonParser,(req,res) => {
-    //res.send(req.body);
-    console.log('Rota POST funcionando');
-    console.log(req.body.amigo)
+    // cria um novo amigo
     novoAmigo = new amigo({
         nome: req.body.nome,
-        sobrenome: req.body.sobrenome,
+        apelido: req.body.apelido,
         idade: req.body.idade
-    });
+    })
+
+    // salva o novo amigo
     novoAmigo.save()
       .then(() => {
           console.log('Amigo salvo ...')
@@ -42,8 +42,40 @@ router.post('/amigos', jsonParser,(req,res) => {
       })
 });
 
+// Busca um contato p
+router.get('/amigos/:amigo_id', function(req, res) {
+    // Busca o contato no Model pelo parâmetro id
+    amigo.findOne({
+        _id : req.params.amigo_id
+    }, function(err, amigo) {
+        if (err)
+            res.send(err);
+        res.json(amigo);
+    });
+});
 
+
+
+// Atualiza
+router.put('/amigos/:amigo_id', jsonParser, async(req,res) => {
+    // Busca o contato no Model pelo parâmetro id
+    var amigoData = req.body;
+    var id = amigoData._id;
+    //
+    console.log(id);
+
+    /*amigo.updateOne( 
+        {_id: id }, 
+        amigoData, 
+        { upsert: true}, 
+        function(err, amigo) {
+            if (err) res.send(err);
+            res.json(amigo);
+    }); */
+});
+  
+
+// Starta o servidor
 router.listen(3000, () => {
     console.log('Servidor rodando na porta 3000.')
 });
-  
