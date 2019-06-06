@@ -25,6 +25,7 @@ insert into marca values(2,"Toyota");
 insert into marca values(3,"Chevrolet");
 insert into marca values(4,"Fiat");
 insert into marca values(5,"Ford");
+insert into marca values(6,"Gurgel");
 
 -- cria a tabela de modelos
 create table modelo (
