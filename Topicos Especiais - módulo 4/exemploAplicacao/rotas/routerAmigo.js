@@ -24,7 +24,7 @@ router.get('/amigos', (req, res) => {
     });
 });
 // Rota salvar amigo
-router.post('/amigos', jsonParser,(req,res) => {
+router.post('/amigos', jsonParser, (req,res) => {
     // cria um novo amigo
     novoAmigo = new amigo({
         nome: req.body.nome,
@@ -36,8 +36,11 @@ router.post('/amigos', jsonParser,(req,res) => {
     novoAmigo.save()
       .then(() => {
           console.log('Amigo salvo ...')
-          res.json('Salvo')
+          res.status(201)
+          res.json('Amigo Salvo')
+          
       }).catch((err) => {
+          res.status(505)
           console.log('Erro ao salvar amigo ...'+err)
       })
 });
@@ -57,21 +60,30 @@ router.get('/amigos/:amigo_id', function(req, res) {
 
 
 // Atualiza
-router.put('/amigos/:amigo_id', jsonParser, async(req,res) => {
+router.put('/amigos/:amigo_id', jsonParser, (req,res) => {
     // Busca o contato no Model pelo parâmetro id
     var amigoData = req.body;
     var id = amigoData._id;
-    //
+    //node
     console.log(id);
 
-    /*amigo.updateOne( 
+    amigo.findByIdAndUpdate( 
         {_id: id }, 
-        amigoData, 
+        {
+            nome:req.body.nome,
+            apelido:req.body.apelido,
+            idade: req.body.idade
+        }, 
         { upsert: true}, 
         function(err, amigo) {
-            if (err) res.send(err);
+            if (err) 
+                res.send(err);
             res.json(amigo);
-    }); */
+    }); 
+
+ 
+
+
 });
   
 
