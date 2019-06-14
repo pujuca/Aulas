@@ -9,7 +9,7 @@ const amigo = mongoose.model('amigo');
 router = express(express.json())
 router.use(bodyParser.urlencoded({ extended: false }))
 router.use(bodyParser.json())
-var jsonParser = bodyParser.json({ type: 'application/*+json' } );
+var jsonParser = bodyParser.json({ type: 'application/*+json' } )
 
 // Rota get
 router.get('/amigos', (req, res) => {
@@ -20,7 +20,8 @@ router.get('/amigos', (req, res) => {
         if (err)
             res.send(err)
         // Retorna todos os amigos encontrados no BD
-        res.json(amigos); 
+        res.status(200)
+        res.json(amigos)
     });
 });
 // Rota salvar amigo
@@ -45,8 +46,8 @@ router.post('/amigos', jsonParser, (req,res) => {
       })
 });
 
-// Busca um contato p
-router.get('/amigos/:amigo_id', function(req, res) {
+// Busca um contato pelo _id
+router.get('/amigos/:amigo_id', (req, res) => {
     // Busca o contato no Model pelo parâmetro id
     amigo.findOne({
         _id : req.params.amigo_id
@@ -57,16 +58,11 @@ router.get('/amigos/:amigo_id', function(req, res) {
     });
 });
 
-
-
-// Atualiza
+// Atualiza um contato pelo _id
 router.put('/amigos/:amigo_id', jsonParser, (req,res) => {
     // Busca o contato no Model pelo parâmetro id
     var amigoData = req.body;
     var id = amigoData._id;
-    //node
-    console.log(id);
-
     amigo.findByIdAndUpdate( 
         {_id: id }, 
         {
@@ -80,10 +76,6 @@ router.put('/amigos/:amigo_id', jsonParser, (req,res) => {
                 res.send(err);
             res.json(amigo);
     }); 
-
- 
-
-
 });
   
 
