@@ -1,0 +1,8 @@
+
+1. Crie um array de numeros de 1 a 10.
+2. Imprima os números pares existentes no array.
+3. Crie um segundo array que armazene o dobro dos valores do primeiro.
+4. Crie uma função que imprima a posição na qual o valor 5 esta localizado no array.
+5. Crie uma função que retorne um array com os valores impares. Posteriormente os imprima.
+6. Crie uma função onde você informa a posição e o valor a ser acrescido ao valor armazenado nesta posição. 
+
