@@ -11,6 +11,7 @@ create table estado(
 create table categoria(
 	idCategoria int not null,
 	nome varchar(30),
+	primary key(idCategoria)
 );
 
 create table usuario(
