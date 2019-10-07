@@ -1,0 +1,14 @@
+use aula
+db.pessoa.insertMany([
+{nome:"Antonio", idade:30, salario:3000.00},
+{nome:"Jose", idade:20, salario:2000.00},
+{nome:"Aldo", idade:35, salario:30000.00},
+{nome:"Gerson", idade:48, salario:10000.00},
+{nome:"Maria", idade:22, salario:1000.00},
+{nome:"Talita", idade:18, salario:940.00},
+{nome:"Rebeca", idade:18, salario:940.00},
+{nome:"Vitoria", idade:18, salario:940.00},
+{nome:"Vinicius", idade:19, salario:1300.00},
+{nome:"Vitor", idade:20, salario:3000.00},
+{nome:"Brenda", idade:18, salario:1200.00}
+])
