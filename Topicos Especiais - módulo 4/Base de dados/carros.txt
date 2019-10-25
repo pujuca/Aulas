@@ -1,11 +1,11 @@
 use ifpi
 
 db.veiculo.insertMany([
-{placa:"XXX1234", modelo:"L200", ano:"2012", cor:"Branca",kmAtual:50000,viagens:[{solicitante:"Jerildo",data:"01/01/2019",kmSaida:49900, kmChegada:50000}]},
-{placa:"XYZ0101", modelo:"Duster", ano:"2010", cor:"Cinza",kmAtual:25300,viagens:[{solicitante:"Maykon",data:"25/12/2018",kmSaida:25290, kmChegada:25300}]},
-{placa:"ABC2222", modelo:"Hilux", ano:"2018", cor:"Preta",kmAtual:1000,viagens:[{solicitante:"Clodoaldo",data:"30/05/2019",kmSaida:750, kmChegada:1000}]},
-{placa:"TAB0330", modelo:"D20", ano:"1985", cor:"Branca",kmAtual:350000,viagens:[{solicitante:"Jerildo",data:"30/05/2007",kmSaida:349800, kmChegada:350000}]},
-{placa:"NIB9979", modelo:"Gol", ano:"2009", cor:"Preta",kmAtual:150000,viagens:[{solicitante:"Athanio",data:"30/03/2019",kmSaida:149500, kmChegada:150000}]},
-{placa:"XXX1230", modelo:"L200", ano:"2007", cor:"Cinza",kmAtual:250000,viagens:[{solicitante:"Denival",data:"30/04/2019",kmSaida:249980, kmChegada:250000}]},
-{placa:"NIS6230", modelo:"Prisma", ano:"2018", cor:"Cinza",kmAtual:25000,viagens:[{solicitante:"Denival",data:"25/10/2019",kmSaida:24900, kmChegada:25000}]}
+{placa:"XXX1234", modelo:"L200", ano:"2012", cor:"Branca",kmAtual:50000,viagens:[{solicitante:"Jerildo",data:ISODate('2019-01-01'),kmSaida:49900, kmChegada:50000}]},
+{placa:"XYZ0101", modelo:"Duster", ano:"2010", cor:"Cinza",kmAtual:25300,viagens:[{solicitante:"Maykon",data:ISODate('2019-12-25'),kmSaida:25290, kmChegada:25300}]},
+{placa:"ABC2222", modelo:"Hilux", ano:"2018", cor:"Preta",kmAtual:1000,viagens:[{solicitante:"Clodoaldo",data:ISODate('2019-05-30'),kmSaida:750, kmChegada:1000}]},
+{placa:"TAB0330", modelo:"D20", ano:"1985", cor:"Branca",kmAtual:350000,viagens:[{solicitante:"Jerildo",data:ISODate('2007-05-30'),kmSaida:349800, kmChegada:350000}]},
+{placa:"NIB9979", modelo:"Gol", ano:"2009", cor:"Preta",kmAtual:150000,viagens:[{solicitante:"Athanio",data:ISODate('2019-03-30'),kmSaida:149500, kmChegada:150000}]},
+{placa:"XXX1230", modelo:"L200", ano:"2007", cor:"Cinza",kmAtual:250000,viagens:[{solicitante:"Denival",data:ISODate('2019-04-30'),kmSaida:249980, kmChegada:250000}]},
+{placa:"NIS6230", modelo:"Prisma", ano:"2018", cor:"Cinza",kmAtual:25000,viagens:[{solicitante:"Denival",data:ISODate('2019-10-25'),kmSaida:24900, kmChegada:25000}]}
 ])
