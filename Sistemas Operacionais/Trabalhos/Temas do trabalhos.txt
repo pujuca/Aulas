@@ -1,0 +1,12 @@
+----- 11 grupos -----
+1. Explicar o funcionamento do sistema de permissão em arquivos linux - grupo 3
+2. Explicar a diferença entre os processadores da intel atuais - grupo 8	
+3. Explicar o processo de repositórios do linux - Grupo 11
+4. Mostrar os principais gerenciadores de janelas do linux - grupo 4	  	
+5. Explicar os principais gerenciadores de boot do linux  - grupo 6
+6. Explicar o funcionamento do controle de usuários do linux - grupo  10
+7. Explique o funcionamento do sistema de permissões do windows - grupo 5
+8. Permissão de aplicativos no android. - grupo 2
+9. Explicar a estrutura de diretórios do Linux - grupo 7
+10.Explicar os arquivos executaveis no Linux - grupo 1
+11.Explicar o mecanismo de atualização do Ubuntu, Fedora e do Susi Linux - grupo 9
